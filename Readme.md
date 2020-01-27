@@ -3,7 +3,7 @@
 
 __Objective:__
 
-This project analyzes job postings for City of LA to suggest for improvements in the job postings that will fill in all the open positions. The analysis is explores various text mining and NLP techniques like readability and similarity to gather insights and suggest recommendations
+This project analyzes job postings for City of LA to suggest for improvements in the job postings that will fill in all the open positions. It also includes development of labelling algorithm that categorizes the job postings as good or need improvement. The analysis is explores various text mining and NLP techniques like readability and similarity to gather insights and suggest recommendations
 
 __Data Overview:__
 
@@ -20,7 +20,7 @@ __Methodology:__
     * a. Content - Readability, Similarity
     * b. Format - Completeness, Word count, spell check, complexity of selection process
     * c. Tone - Parts of Speech Tagging, Sentiment Analysis
-4. Scoring and labelling postings  - a cumulative score for each job posting has been computed based on the above three criteria. This cumulative score can be used to rate the postings as good or bad (need improvement).
+4. Labelling algorithm : Scoring and labelling postings  - a cumulative score for each job posting has been computed based on the above three criteria. This cumulative score can be used to rate the postings as good or bad (need improvement).
 5. Recommendations and Conclusion 
 6. Future Scope
 
@@ -57,5 +57,5 @@ Few ways in which the preliminary analysis can be extended:
 1. To check using pronouns if there is gender bias in the postings which is discouraging candidates to apply 
 2. Look for most frequent words (probable methods: Word 2 Vec and TSNE) used in the postings, specifically     in the requirements/duties section and compare it with ones used by some other companies
 3. Modelling to find most dominant/ commmon topic if any using LDA 
-4. Building an algorithm to score the job descriptions so that whenever a new posting is posted, it can   first be validated, scored and improved if required.
+4. Building an end to end engine to score the job descriptions so that whenever a new posting is posted, it can first be validated, scored and improved if required.
 
